@@ -1,12 +1,12 @@
 # Skills
-# Organizational leadership
-- skill: Organizational leadership
-  description: I have several years of experience leading organziations from community groups to business departments. From public speaking, to mentoring, to coordination of people and events, I can lead in any context.
+- skill: Back-end
+  description: Django, Django Admin, Django Rest Framework, Django yasg
 
-# Communications strategy
-- skill: Communications strategy
-  description: Content and marketing strategy,
+- skill: AWS
+  description: Beanstalk, S3, Cloudfront, RDS, EC2, Lightsail, Code Deploy
 
-# Digital content development and creation
-- skill: Digital content development and creation
-  description: Copy writing, graphic design, web design, front-end web development, print design
+- skill: DevOps
+  description: Ubuntu, MySQL, MariaDB, Github, Bitbucket, Nginx, Apache
+
+- skill: Front-end
+  description: ES6, React, material-ui, Npm, Yarn, Webpack, jquery, bootstrap

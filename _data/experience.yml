@@ -1,19 +1,31 @@
 # Jobs
-# VP of Global Communications
-- company: Springfield International Human Rights Outreach
-  position: VP of Global Communications
-  duration: Oct, 2013 &mdash; Present
-  summary: Write about your core competencies in one or two sentences describing your position. If you held the position for a long time, it could be a longer section, including a couple bullet points	<ul class="resume-item-list"><li>A project you are proud of</li><li>Another awesome project</li><li>or a team or department you worked with</li></ul>
+- company: Beststay
+  position: QA & Backend Developer
+  duration: 2016.10 &mdash; 2017.3
+  summary: 지도 기반 부동산 O2O 서비스
+  description: |
+    프로젝트 중반에 합류해 작성되고 있는 서비스의 테스트를 담당하였습니다.<br>
+    이후 PHP 레거시 코드로 작성된 API의 sql문 성능을 확인하고 향상시키는 역할을 맡았습니다.<br>
+    또 프론트단의 비동기 처리를 개선하고 지도상에 클러스터링을 적용하는데 기여했습니다.<br>
 
-# Director of Digital Stratgy
-- company: United Nations Human Rights Council
-  position: Director of Digital Strategy
-  duration:  Jun, 2010 &mdash; Sept, 2013
-  summary: If your stint was shorter, feel free to be brief and just call out the most meaningful points of your role. Be concise, and be meaninful. The person reading just needs enough to want to talk to you more about your experience.
+- company: (주)엔다인아이엔씨
+  position: Fullstack Developer
+  duration: 2016.12 &mdash; 2017.5 (비정기)
+  summary: 공무원 과장급 역량실습 모의테스트 시스템 개발
+  description: |
+    서면으로 실시되는 역량실습 과제를 온라인 서비스로 포팅하는 작업을 담당했습니다.<br>
+    관리자, 시험감독자, 시험자의 세 단계 권한 계층을 두어 리소스의 접근을 권한별로 제어하였습니다.<br>
+    프론트 페이지가 적었기 때문에 Django admin template을 커스텀하여 작업하였으며 통계를 내어 chart.js로 차팅하였습니다.<br>
 
-
-# Communications Coordinator
-- company: Springfield Women & Children's Center
-  position: Communications Coordinator
-  duration:   Jun, 2008  &mdash; May, 2010
-  summary: Led communication efforts across digital and traditional media channels for marketing and public relations, internal communication strategies, and coordinated support programs for the recipients of the center's services.
+- company: Tooravel
+  position: Fullstack Developer, Manager
+  duration:   2017.8 &mdash; Present
+  summary: 개발 및 서비스 운영
+  description: |
+    약 4개월의 기간 동안 
+    <ul>
+      <li>Django의 queryset과 model manager를 사용해 서버사이드 리팩토링</li>
+      <li>입점한 파트너들의 제휴 컨텐츠 업로드를 위한 Django admin 구성</li>
+      <li>bootstrap & jquery을 활용한 파트너 관리 페이지 개발</li>
+    </ul>
+    에 기여했습니다. 이후 2018년부터 현재까지 광고 & 제휴 및 서비스 운영을 망라한 전반적인 책임을 맡아서 운영하고 있습니다.<br>

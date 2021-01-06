@@ -1,16 +1,39 @@
 # Projects
 # uncomment the urls if you wish to display them, and add your own URL
 
-# jazznotes.io
-- project: jazznotes.io
-  role: Founder & Primary Developer
-  duration: 2012 &mdash; Present
-  # url: "#"
-  description: Jazz Notes is an open source node/ember app that helps you keep track of your music compositions and new ideas.
+# - project: Pling (일정관리 서비스)
+#   role: Backend Developer
+#   duration: 2013.4 &mdash; 2013.10
+#   # url: "#"
+#   description: |
+#     중소기업청 공모전 수상한 
 
-# Springfield Community Outreach Group
-- project: Springfield Community Outreach Group
-  role: Co-Founder & Organizer
-  duration: 2007 &mdash; Present
+- project: 냉장고를 부탁해 (레시피 추천 서비스)
+  role: Backend Developer
+  duration: 2016.9 &mdash; 2016.12
   # url: "#"
-  description: SCOG is a local monthly meetup in Springfield where we share opportunities to volunteer in the community and organize support for families and neighborhoods in need of assistance that the community can provide.
+  description: |
+    현재 냉장고에 있는 식품들로 준비 가능한 레시피와 약간의 추가 구매가 필요한 레시피를 추천하는 서비스를 졸업작품으로 구현하였습니다.<br>
+    Python 언어를 사용해 cosine similarity를 계산하여 Item based collaboration filtering 알고리즘을 직접 구현하였습니다.<br>
+    그 결과물을 Django서버에서 crontab을 활용해 스케쥴링하여 12시간에 한번 계산하여 사용자들에게 레시피 추천 결과를 노출하였습니다.<br>
+
+- project: Danong (친환경 인증 농산물 커머스 프로토타입)
+  role: Primary Developer
+  duration: 2020.10 &mdash; 2020.12
+  # url: "#"
+  description: |
+    AWS Lightsail과 Django & Django Rest Framework & Mysql을 사용해 서버를 구성하였습니다.<br>
+    구현과정에서 흙토람 API를 통해 토양정보를 조회하려 하였으나 권한 부족으로 접근하지 못하여 대신 같은 api를 사용하는 농사로 농업기술포털을 selenium을 활용해 비동기 크롤링하여 토양정보를 조회하였습니다.<br>
+    <br>
+    프론트는 React hooks를 통해 상태를 관리하고 Material-UI로 그려냈으며 token 기반의 auth를 구현하였습니다.<br>
+    또 react-hook-form으로 form의 렌더링 횟수를 최적화하고 validation을 수행하였습니다.<br>
+    추가적으로 kakao login 구현과 naver maps, iamport 결제모듈의 사용이 있었습니다.<br>
+    <br>
+    devOps적인 측면에서는 배포의 자동화를 위해 git workflow와 AWS codepipeline, AWS codedeploy를 사용하였습니다.<br>
+
+
+# - project: Cityhawks (서울시립대학교 미식축구부 관리페이지)
+#   role: Primary Developer
+#   duration: 2020.10 &mdash; 2020.12
+#   # url: "#"
+#   description: ㅏㅏ
