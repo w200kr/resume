@@ -55,7 +55,7 @@
 
     .header-title {
       @include sans;
-      font-weight: 300;
+      font-family: 'Noto Sans KR', sans-serif; 
       font-size: 1.75rem;
       line-height: 2rem;
       letter-spacing: -.05rem;
@@ -171,7 +171,15 @@
     }
   }
 
-  .resume-item-copy { margin: .75rem 0 0; }
+  .resume-item-copy {
+    font-family: 'Noto Sans KR', sans-serif; 
+    line-height: 1.8; 
+    margin: .75rem 0 0; 
+  }
+
+  li.resume-item-copy{
+    margin: .15rem 0 0; 
+  }
 }
 
 // footer styles
@@ -199,7 +207,7 @@
 @media print {
   .no-print { display: none !important }
   .print-only { display: block !important }
-  body { font-family: 'Noto Sans KR', sans-serif; font-size: 12px; line-height: 1rem; }
+  body { font-size: 12px; line-height: 1rem; }
   .page-header { padding: 1rem 0 .2rem;
     .header-name {
       @include sans_bold;
