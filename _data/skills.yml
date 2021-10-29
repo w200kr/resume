@@ -1,12 +1,12 @@
 # Skills
 - skill: Back-end
-  description: Django, Django Admin, Django Rest Framework, Django yasg
+  description: django, graphene, django admin, django rest framework, django yasg
 
 - skill: AWS
-  description: Beanstalk, S3, Cloudfront, RDS, EC2, Lightsail, Code Deploy
+  description: beanstalk, S3, cloudfront, RDS, EC2, lightsail, code deploy
 
 - skill: DevOps
-  description: Ubuntu, MySQL, MariaDB, Github, Bitbucket, Nginx, Apache
+  description: ubuntu, mysql, mariaDB, github workflow, nginx, apache
 
 - skill: Front-end
-  description: ES6, React, material-ui, Npm, Yarn, Webpack, jquery, bootstrap
+  description: ES6, react, graphql, nextjs, antd, material-ui, npm, yarn, webpack, jquery, bootstrap

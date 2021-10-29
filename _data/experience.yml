@@ -19,7 +19,7 @@
 
 - company: Tooravel
   position: Fullstack Developer, Manager
-  duration:   2017.8 &mdash; Present
+  duration:   2017.8 &mdash; 2020.8
   summary: 개발 및 서비스 운영
   description: |
     약 4개월의 기간 동안 
@@ -28,4 +28,18 @@
       <li class="resume-item-copy">입점한 파트너들의 제휴 컨텐츠 업로드를 위한 Django admin 구성</li>
       <li class="resume-item-copy">bootstrap & jquery을 활용한 파트너 관리 페이지 개발</li>
     </ul>
-    <p class="resume-item-copy">에 기여했습니다. 이후 2018년부터 현재까지 광고 & 제휴 및 서비스 운영을 망라한 전반적인 책임을 맡아서 운영하고 있습니다.</p>
+    <p class="resume-item-copy">에 기여했습니다. 이후 2018년부터 코로나로 인해 운영중지된 2020년 8월까지 광고 & 제휴 및 서비스 운영을 망라한 전반적인 책임을 맡아서 운영하였습니다.</p>
+
+- company: (주)그럼에도
+  position: Fullstack Developer
+  duration:   2021.1 &mdash; 2021.8
+  summary: 여성패션 이커머스 풀스택 개발
+  description: |
+    django & graphene을 사용한 graphql 기반 서버 개발과 react & nextjs & antd 기반의 관리자 페이지 개발을 수행하였습니다.
+    <ul>
+      <li class="resume-item-copy">django ORM 패턴을 활용한 graphql 쿼리 최적화</li>
+      <li class="resume-item-copy">custom react hooks 사용한 filtering 로직 개선</li>
+      <li class="resume-item-copy">antd form을 사용한 컴포넌트 리렌더링 최소화</li>
+      <li class="resume-item-copy">기타 네이버 쇼핑 EP 적용 등</li>
+    </ul>
+    <p class="resume-item-copy">주로 위의 업무를 진행하며 서비스 런칭과 지속에 기여했습니다.</p>
