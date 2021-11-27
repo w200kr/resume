@@ -32,7 +32,7 @@
 
 - company: (주)그럼에도
   position: Fullstack Developer
-  duration:   2021.1 &mdash; 2021.8
+  duration:   2021.1 &mdash; 2021.10
   summary: 여성패션 이커머스 풀스택 개발
   description: |
     django & graphene을 사용한 graphql 기반 서버 개발과 react & nextjs & antd 기반의 관리자 페이지 개발을 수행하였습니다.
