@@ -13,27 +13,19 @@
   duration: 2016.9 &mdash; 2016.12
   # url: "#"
   description: |
-    현재 냉장고에 있는 식품들로 준비 가능한 레시피와 약간의 추가 구매가 필요한 레시피를 추천하는 서비스를 졸업작품으로 구현하였습니다.<br>
-    Python 언어를 사용해 cosine similarity를 계산하여 Item based collaboration filtering 알고리즘을 직접 구현하였습니다.<br>
-    그 결과물을 Django서버에서 crontab을 활용해 스케쥴링하여 12시간에 한번 계산하여 사용자들에게 레시피 추천 결과를 노출하였습니다.<br>
+    <ul>
+      <li class="resume-item-copy">냉장고에 있는 식품들로 준비 가능한 레시피와 추가 구매가 필요한 레시피를 추천하는 졸업작품 구현</li>
+      <li class="resume-item-copy">Python으로 Cosine Similarity를 계산하여 Item-based 협업 필터링 알고리즘 직접 구현</li>
+      <li class="resume-item-copy">Django 서버에서 Crontab을 활용해 12시간마다 레시피 추천 결과를 스케줄링하여 사용자에게 제공</li>
+    </ul>
 
 - project: Danong (친환경 인증 농산물 커머스 프로토타입)
   role: Primary Developer
   duration: 2020.10 &mdash; 2020.12
   # url: "#"
   description: |
-    AWS Lightsail과 Django & Django Rest Framework & Mysql을 사용해 서버를 구성하였습니다.<br>
-    구현과정에서 흙토람 API를 통해 토양정보를 조회하려 하였으나 권한 부족으로 접근하지 못하여 대신 같은 api를 사용하는 농사로 농업기술포털을 selenium을 활용해 비동기 크롤링하여 토양정보를 조회하였습니다.<br>
-    <br>
-    프론트는 React hooks를 통해 상태를 관리하고 Material-UI로 그려냈으며 token 기반의 auth를 구현하였습니다.<br>
-    또 react-hook-form으로 form의 렌더링 횟수를 최적화하고 validation을 수행하였습니다.<br>
-    추가적으로 kakao login 구현과 naver maps, iamport 결제모듈의 사용이 있었습니다.<br>
-    <br>
-    devOps적인 측면에서는 배포의 자동화를 위해 git workflow와 AWS codepipeline, AWS codedeploy를 사용하였습니다.<br>
-
-
-# - project: Cityhawks (서울시립대학교 미식축구부 관리페이지)
-#   role: Primary Developer
-#   duration: 2020.10 &mdash; 2020.12
-#   # url: "#"
-#   description: ㅏㅏ
+    <ul>
+      <li class="resume-item-copy">AWS Lightsail, Django, DRF, MySQL로 서버 구성, Selenium으로 토양 정보 크롤링</li>
+      <li class="resume-item-copy">React Hooks와 Material-UI로 프론트엔드 개발, Token 기반 인증 및 폼 최적화 구현</li>
+      <li class="resume-item-copy">Kakao 로그인, Naver Maps, Iamport 결제 모듈 통합, CI/CD는 GitHub Workflow와 AWS 로 자동화</li>
+    </ul>
