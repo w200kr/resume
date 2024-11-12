@@ -17,11 +17,11 @@ resume_title:                   "비즈니스 목표에 맞춘 실용적인 기�
 resume_contact_email:           "w200kr@gmail.com"
 
 # the next two items are used for schema itemprops in _layouts/resume.html
-resume_contact_telephone:       "010-9287-4497"
+resume_contact_telephone:       "+82 10-9287-4497"
 resume_contact_address:         "서울특별시 광진구 아차산로51길 36-6"
 
-resume_header_contact_info:     "서울특별시 광진구 아차산로51길 36-6 • 010-9287-4497 • w200kr@gmail.com"
-display_header_contact_info:    "false"
+resume_header_contact_info:     "+82 10-9287-4497 • w200kr@gmail.com"
+display_header_contact_info:    "true"
 
 resume_header_intro: "<p></p>"
 
