@@ -20,7 +20,7 @@ resume_contact_email:           "w200kr@gmail.com"
 resume_contact_telephone:       "+82 10-9287-4497"
 resume_contact_address:         "서울특별시 광진구 아차산로51길 36-6"
 
-resume_header_contact_info:     "+82 10-9287-4497 • w200kr@gmail.com"
+resume_header_contact_info:     "+82 10-9287-4497 • w200kr@gmail.com • https://github.com/w200kr"
 display_header_contact_info:    "true"
 
 resume_header_intro: "<p></p>"
@@ -53,7 +53,7 @@ resume_social_links:
   # resume_instagram_url:         "https://www.instagram.com/asin.no63"
   # resume_website_url:           "http://joelglovier.com"
   # resume_medium_url:            "https://medium.com/@jglovier"
-resume_print_social_links:      true
+resume_print_social_links:      false
 
 # Design settings
 resume_theme:                   default
