@@ -70,6 +70,8 @@
   }
 
   .executive-summary {
+    font-family: 'Noto Sans KR', sans-serif;
+
     @include media_larger_than_mobile { font-size: 1.125rem; }
   }
 }
