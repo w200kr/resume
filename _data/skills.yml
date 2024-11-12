@@ -1,12 +1,21 @@
 # Skills
+- skill: Languages
+  description: Python, TypeScript, JavaScript, Kotlin, SQL
+
 - skill: Backend
-  description: fastapi, sqlalchemy, django, graphene, DRF (+ yasg), mysql(mariadb), postgresql, openai
+  description: Django, FastAPI, DRF (+ yasg), SQLAlchemy, Graphene, Pydantic, OpenAI, REST API, JWT, OAuth
 
-- skill: AWS
-  description: ECS, beanstalk, LightSail, redis, RDS, S3, ECR, CodePipeline, cloudfront, SQS
+- skill: Asynchronous Processing
+  description: Celery, AsyncIO, AWS SQS, RabbitMQ
 
-- skill: DevOps
-  description: linux, mariaDB, github workflow, docker, nginx, apache, poetry, pytest
+- skill: Database
+  description: PostgreSQL, MySQL (MariaDB), Redis
+
+- skill: AWS & Cloud Services
+  description: ECS, RDS, S3, CodePipeline, CloudWatch, Beanstalk, ECR, CloudFront, VPC, IAM, Secrets Manager, SQS, ELB, Route 53, CodeBuild, LightSail
+
+- skill: DevOps & CI/CD
+  description: Docker, Linux, GitHub Actions, Nginx, Poetry, Pytest, Apache
 
 - skill: Frontend
-  description: ES6, typescript, react, graphql, nextjs, antd, material-ui, npm, yarn
+  description: React, React Router, Next.js, Redux, ES6, Ant Design, Material-UI, npm, Yarn

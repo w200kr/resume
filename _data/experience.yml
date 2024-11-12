@@ -1,76 +1,51 @@
-# Jobs
-- company: Beststay
-  position: QA & Backend Developer (비상주)
-  duration: 2016.10 &mdash; 2017.03
-  summary: 지도 기반 부동산 O2O 서비스
-  description: |
-    <ul>
-      <li class="resume-item-copy">프로젝트 중반에 합류하여 서비스 테스트를 담당, 품질 보증 업무 수행</li>
-      <li class="resume-item-copy">PHP로 작성된 레거시 API의 SQL 성능 분석 및 최적화 작업을 담당</li>
-      <li class="resume-item-copy">비동기 프론트엔드 처리 개선 및 지도 클러스터링 기능 적용에 기여</li>
-    </ul>
-
-- company: (주)엔다인아이엔씨
+- company: (주)우노트레이딩
   position: Fullstack Developer
-  duration: 2016.12 &mdash; 2017.05 (비정기)
-  summary: 공무원 과장급 역량실습 모의테스트 시스템 개발
+  duration: 2023.04 &mdash; 2024.10
+  summary: 명품 B2B 플랫폼 인프라, devops 세팅 및 서비스 개발
   description: |
     <ul>
-      <li class="resume-item-copy">오프라인으로 진행되던 역량 실습 과제를 온라인 서비스로 전환하는 작업 주도</li>
-      <li class="resume-item-copy">관리자, 시험 감독자, 응시자의 세 권한 계층을 설계하여 리소스 접근 제어 구현</li>
-      <li class="resume-item-copy">Django Admin 템플릿 커스터마이징 및 통계 데이터를 활용한 Chart.js 차트 구현</li>
-    </ul>
-
-- company: Tooravel
-  position: Fullstack Developer, Manager
-  duration: 2017.08 &mdash; 2020.08
-  summary: 개발 및 서비스 운영
-  description: |
-    <ul>
-      <li class="resume-item-copy">Django의 Queryset 및 Model Manager를 사용해 서버 리팩토링 주도</li>
-      <li class="resume-item-copy">Django Admin을 통해 파트너들의 제휴 콘텐츠 업로드 관리 페이지 구성</li>
-      <li class="resume-item-copy">Bootstrap 및 jQuery를 활용한 파트너 관리 페이지 개발</li>
-      <li class="resume-item-copy">2018년부터 서비스 운영 전반을 책임, 코로나로 인해 운영 중단된 2020년까지 광고 및 제휴 관리 포함 서비스 운영 총괄</li>
-    </ul>
-
-- company: (주)그럼에도
-  position: Fullstack Developer
-  duration: 2021.01 &mdash; 2021.10
-  summary: 여성패션 이커머스 풀스택 개발
-  description: |
-    <ul>
-      <li class="resume-item-copy">Django & Graphene을 사용한 GraphQL 기반 서버 개발 및 React, Next.js, Ant Design을 활용한 관리자 페이지 개발</li>
-      <li class="resume-item-copy">Django ORM을 최적화하여 효율적인 GraphQL 쿼리 구현</li>
-      <li class="resume-item-copy">Custom React Hooks를 활용해 필터링 로직 개선 및 성능 향상</li>
-      <li class="resume-item-copy">Ant Design Form을 사용해 컴포넌트 리렌더링을 최소화하여 성능 최적화</li>
-      <li class="resume-item-copy">네이버 쇼핑 EP 연동 등 추가 기능을 통해 서비스 런칭과 운영에 기여</li>
+      <li class="resume-item-copy"><strong>네트워크 보안 및 비용 절감:</strong> 최소한의 네트워크 격리와 보안 설정을 위한 VPC 구성 및 ARM64 기반 아키텍처 사용으로 비용 절감</li>
+      <li class="resume-item-copy"><strong>CI/CD 파이프라인 구축:</strong> GitHub Actions, ECR, CodePipeline을 활용한 CI/CD 파이프라인 구성으로 배포 자동화</li>
+      <li class="resume-item-copy"><strong>주요 서비스 개발 및 배포:</strong></li>
+      <ol>
+        <li>FastAPI + SQLAlchemy로 구성된 백엔드 서비스</li>
+        <li>Kotlin + Apache POI 기반 주문 시트 데이터 파서</li>
+        <li>TypeScript + React를 활용한 인하우스 관리용 Admin</li>
+      </ol>
+      <li class="resume-item-copy"><strong>비동기 아키텍처 도입:</strong> 다양한 서비스 간 비동기 통신을 위해 AWS SQS 도입, 메시지 기반 통신을 기본으로 설정</li>
+      <li class="resume-item-copy"><strong>업무 자동화 도입:</strong> OpenAI GPT-4o 모델을 파인튜닝해 파싱 검증 및 주문 규정 편집 작업 자동화, 하루에 운영팀 업무 시간 1시간 절약</li>
     </ul>
 
 - company: PFC Technologies
   position: Backend Developer
   duration: 2022.01 &mdash; 2023.03
-  summary: 
+  summary: 모놀리식 Django API 유지보수 및 투자 도메인 분리
   description: |
     <ul>
-      <li class="resume-item-copy">Django 기반 모놀리식 서비스의 개인신용대출 API 재구성</li>
-      <li class="resume-item-copy">신용평가사, 은행 등 외부 금융 기관과의 EI(External Interface) 유지보수를 통해 시스템 연동 관리</li>
-      <li class="resume-item-copy">투자 도메인의 분리를 위해 투자팀 Engineering Manager 역할 수행, FastAPI + SQLAlchemy를 활용해 딜 페이지 생성 및 레거시 로직 분리</li>
+      <li class="resume-item-copy"><strong>개인신용대출 API 재구성:</strong> Django 기반 모놀리식 서비스에서 개인신용대출 API 개선 및 성능 최적화</li>
+      <li class="resume-item-copy"><strong>외부 기관 연동 관리:</strong> 신용평가사 및 은행 등 외부 금융기관과의 EI(External Interface) 유지 보수 및 연동 안정성 강화</li>
+      <li class="resume-item-copy"><strong>투자팀 기술 리드 역할 수행:</strong> 모놀리식 레거시 API 중 투자 도메인 로직을 FastAPI + SQLAlchemy로 분리하는 프로젝트 주도</li>
     </ul>
 
-- company: (주)우노트레이딩
+- company: (주)그럼에도
   position: Fullstack Developer
-  duration: 2023.04 &mdash; 2024.10(예정)
-  summary: 명품 B2B 플랫폼 개발
+  duration: 2021.01 &mdash; 2021.10
+  summary: 여성패션 이커머스 서비스 풀스택 개발
   description: |
     <ul>
-      <li class="resume-item-copy">최소한의 네트워크 격리와 보안설정을 위한 VPC 구성 및 비용 절감을 위해 ARM64 기반 아키텍처 사용</li>
-      <li class="resume-item-copy">다양한 배경과 요구사항을 가진 서비스 간 비동기 통신과 메시지 기반 아키텍처를 위해 AWS SQS를 도입</li>
-      <li class="resume-item-copy">CI/CD 파이프라인 구축: GitHub Actions, ECR, CodePipeline을 활용하여 자동 배포 환경 구성</li>
-      <li class="resume-item-copy">세 가지 주요 서비스 개발 및 배포:</li>
-      <ol>
-        <li>FastAPI + SQLAlchemy로 구성된 백엔드</li>
-        <li>Kotlin + Apache POI를 사용한 주문시트 데이터 파서</li>
-        <li>TypeScript + React로 구성된 인하우스 관리용 Admin</li>
-      </ol>
-      <li class="resume-item-copy">OpenAI GPT-4o 모델을 파인튜닝하여 파싱 검증 및 주문 규정 편집 작업을 자동화, 운영팀의 반복 업무 부담을 경감.</li>
+      <li class="resume-item-copy"><strong>GraphQL 서버 개발:</strong> Django & Graphene을 사용해 GraphQL 기반 서버 구축, 이커머스 데이터 효율적 제공</li>
+      <li class="resume-item-copy"><strong>ORM 최적화:</strong> Eager loading 기법으로 효율적인 ORM + GraphQL 쿼리 구현, 병목구간 데이터 응답 시간 80% 단축</li>
+      <li class="resume-item-copy"><strong>UI 컴포넌트 효율성:</strong> Ant Design Form + Custom React Hooks을 사용하여 컴포넌트 리렌더링 최소화, 페이지 성능 15% 향상</li>
+      <li class="resume-item-copy"><strong>추가 기능 구현:</strong> 네이버 쇼핑 EP 연동 등 기능 추가를 통해 서비스 런칭 및 운영 기여</li>
+    </ul>
+
+- company: Tooravel
+  position: Fullstack Developer, Team Lead
+  duration: 2017.08 &mdash; 2020.08
+  summary: 여행 플랫폼 개발 및 서비스 운영
+  description: |
+    <ul>
+      <li class="resume-item-copy"><strong>서버 개발:</strong> Django의 Queryset 및 Model Manager를 활용해 서버 리팩토링, 데이터 처리 성능 30% 이상 향상</li>
+      <li class="resume-item-copy"><strong>파트너 관리 페이지 구축:</strong> Bootstrap, jQuery을 더한 Custom Django Admin을 통해 파트너 콘텐츠 관리 페이지 구성</li>
+      <li class="resume-item-copy"><strong>서비스 운영 총괄:</strong> 2018년부터 서비스 운영 전반 담당, 운영 중단 전까지 2년 반 동안 광고 및 제휴, CS 포함 서비스 운영 총괄</li>
     </ul>
