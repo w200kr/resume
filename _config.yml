@@ -11,7 +11,7 @@ sass:
 # Resume settings
 resume_avatar:                  "true"
 resume_name:                    "신석은"
-resume_title:                   "비즈니스 목표에 맞춘 실용적인 기술 적용을 추구합니다."
+resume_title:                   "업무 목표에 맞춘 실용적인 기술 적용을 추구합니다."
 
 # used for the contact button in _layouts/resume.html
 resume_contact_email:           "w200kr@gmail.com"
