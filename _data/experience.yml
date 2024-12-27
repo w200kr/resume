@@ -5,30 +5,28 @@
     <ul>
       <li><strong>도메인 특성</strong>
         <ul>
-          <li>명품 B2B 플랫폼으로, 40여 곳의 해외 부띠끄에서 매일 제공되는 <strong>상품·재고 라인시트</strong>를 받아서 데이터화 해야함</li>
-          <li>SKU·색상·사이즈·가격 등 <strong>복합 필드로 구성된 재고 데이터</strong>가 하루 <strong>10만 건 이상</strong> 발생</li>
+          <li>이탈리아 명품 부띠끄 40여 곳에서 제공되는 재고 데이터(일일 10만 건 이상)를 안정적으로 처리</li>
         </ul>
       </li>
       <li><strong>문제</strong>
         <ul>
-          <li>사내 개발 인프라가 존재하지 않던 상황이라 <strong>사내 VPC 구성부터 서비스 개발</strong>까지 진행해야했음</li>
-          <li>B2B 명품 거래 특성상, 재고 정보가 조금만 틀려도 직·간접적 비용 발생</li>
+          <li>사내 개발 인프라 부재로 VPC 구성부터 서비스 개발까지 전 과정을 구축해야 함</li>
+          <li>명품 거래 특성상, 재고 정보 오류 시 직·간접적 비용 발생</li>
         </ul>
       </li>
       <li><strong>해결</strong>
         <ul>
-          <li><strong>인프라 최적화</strong>: VPC 구성, ARM64 아키텍처 도입으로 서버 비용 월 15% 절감. GitHub Actions + CodePipeline으로 자동 배포; </li>
-          <li><strong>데이터 파이프라인 구축</strong>: Kotlin + Apache POI로 각 부띠끄의 엑셀·CSV 라인시트를 자동 파싱·검증</li>
-          <li><strong>비동기 아키텍처(AWS SQS)</strong>: 메시지 기반 처리를 통해 트래픽 부하를 분산, 확장성 확보</li>
-          <li><strong>풀 타입 힌트(Full Type Hint) 활용</strong>: 코드 품질·가독성 향상, IDE 검사 및 CI/CD 파이프라인에서 조기 에러 감지</li>
-          <li><strong>OpenAI GPT-4 파인튜닝</strong>으로 SKU·가격 정보 검증 자동화 → 운영팀 검수 효율 향상</li>
+          <li><strong>인프라 최적화</strong>: VPC 구성, ARM64 아키텍처 도입(서버 비용 월 15% 절감), GitHub Actions + CodePipeline으로 자동 배포</li>
+          <li><strong>데이터 파이프라인</strong>: Kotlin + Apache POI로 엑셀·CSV 라인시트를 자동 파싱·검증</li>
+          <li><strong>비동기 아키텍처</strong>: AWS SQS로 메시지 기반 처리, 트래픽 부하 분산 및 확장성 확보</li>
+          <li><strong>풀 타입 힌트</strong>: 코드 품질과 가독성 향상, CI/CD에서 조기 에러 감지</li>
+          <li><strong>AI 검증</strong>: OpenAI GPT-4 파인튜닝으로 SKU·가격 정보 검증 자동화 → 운영팀 업무 효율 상승</li>
         </ul>
       </li>
       <li><strong>성과</strong>
         <ul>
-          <li><strong>대규모 재고 데이터를 일일 10만 건 이상 처리 가능</strong>, 오류 발생시 수기로 수정가능하도록 어드민 세팅</li>
-          <li>재고 데이터 정확도 제고: <strong>파싱 오류 전분기 대비 50% 이상 감소</strong>, 매출 및 CS 리스크 축소</li>
-          <li><strong>검증 자동화</strong>로 운영팀 업무 1시간/일 절감, 배포 주기 단축(배포 시간 50% 이상 단축)</li>
+          <li>대규모 재고 데이터를 지연 없이 일 10만 건 이상 처리, 파싱 오류 전분기 대비 50% 감소</li>
+          <li>검증 자동화로 운영팀 업무 1시간/일 절감, 배포 주기 및 시간 50% 이상 단축</li>
         </ul>
       </li>
     </ul>
@@ -40,22 +38,22 @@
     <ul>
       <li><strong>문제</strong>
         <ul>
-          <li>모놀리식 Django 서비스에 <strong>투자 도메인 로직</strong>이 여러 모듈에 혼재되어, 성능 저하와 장애 대응이 어려움</li>
-          <li>대출, 상환 등 <strong>타 도메인과의 코드·DB 중첩</strong>, 책임 경계 모호</li>
+          <li>모놀리식 Django 서비스에서 투자 도메인 로직이 여러 모듈에 혼재, 성능 저하와 장애 대응 어려움</li>
+          <li>대출, 상환 등 타 도메인과 코드·DB가 중첩되어 책임 경계가 모호</li>
         </ul>
       </li>
       <li><strong>해결</strong>
         <ul>
-          <li><strong>도메인 분리 설득·협업</strong>: 투자팀 엔지니어링 매니저로서, 타 팀에게 <strong>도메인 분리 필요성과 기대 효과</strong>를 적극 납득</li>
-          <li><strong>투자 로직 식별·재정립</strong>: 모놀리식 내 다른 영역에 산재된 투자 로직을 발굴, <strong>투자팀 중심 업무 일원화</strong></li>
-          <li>FastAPI + SQLAlchemy 기반으로 <strong>투자 도메인 마이크로서비스 분리</strong>, 레거시 Django 연동 최소화</li>
-          <li><strong>리팩토링</strong>: 이전 모듈 중 겹치는 부분은 추상화·최적화해, 코드 중복 및 유지보수 비용 절감</li>
+          <li><strong>도메인 분리 설득·협업</strong>: 투자팀 엔지니어링 매니저로서, 타 팀에게 분리 필요성과 기대 효과를 적극 납득</li>
+          <li><strong>투자 로직 식별·재정립</strong>: 모놀리식 내 투자 로직을 발굴해 투자팀 중심 업무 일원화</li>
+          <li><strong>FastAPI + SQLAlchemy</strong> 기반으로 투자 도메인 마이크로서비스 분리, 레거시 Django 연동 최소화</li>
+          <li><strong>리팩토링</strong>: 중복 모듈 추상화·최적화로 유지보수 비용 절감</li>
         </ul>
       </li>
       <li><strong>성과</strong>
         <ul>
-          <li><strong>투자 도메인 분리</strong> 성공으로 <strong>장애 원인 파악</strong>과 <strong>기능 릴리스</strong>가 훨씬 수월해짐</li>
-          <li>신용평가사 및 은행 등 <strong>외부 금융기관과의 EI(External Interface) 유지 보수</strong> 및 연동 안정성 강화</li>
+          <li>투자 도메인 분리 후 장애 원인 파악·기능 릴리스가 수월해짐</li>
+          <li>신용평가사 및 은행 등 외부 금융기관과의 EI(External Interface) 유지 보수 및 연동 안정성 강화</li>
         </ul>
       </li>
     </ul>
@@ -67,53 +65,52 @@
     <ul>
       <li><strong>문제</strong>
         <ul>
-          <li><strong>신규 여성패션 이커머스 서비스 런칭</strong>, 다량의 상품 데이터를 실시간 노출 + UI 성능 중요</li>
+          <li>신규 여성패션 이커머스 서비스 런칭 시, 다량의 상품 데이터를 실시간 노출 + UI 성능도 중요</li>
         </ul>
       </li>
       <li><strong>해결</strong>
         <ul>
           <li><strong>GraphQL 서버 구축</strong>: Django & Graphene으로 상품 데이터를 구조적으로 제공</li>
-          <li><strong>ORM 최적화</strong>: Eager loading 통해 GraphQL 응답 속도 80% 향상</li>
+          <li><strong>ORM 최적화</strong>: Eager loading으로 GraphQL 응답 속도 80% 향상</li>
           <li><strong>어드민 UI 개선</strong>: Ant Design Form + Custom React Hooks, 리렌더링 최소화</li>
         </ul>
       </li>
       <li><strong>성과</strong>
         <ul>
-          <li><strong>병목 구간 응답 시간 80% 단축</strong>, 서비스 런칭 시 안정적 사용자 경험 제공</li>
-          <li>커머스 운영에 필요한 상품 어드민 동시 제공</li>
+          <li>병목 구간 응답 시간 80% 단축, 안정적 사용자 경험 확보</li>
+          <li>커머스 운영을 위한 상품 어드민 동시 제공, 초기 CS 문의 30% 감소</li>
         </ul>
       </li>
     </ul>
 
-- company: "Tooravel"
-  position: "공동 경영인"
+- company: "Tooravel (공동경영인)"
+  position: "Co-founder / 공동경영인"
   duration: "2018.01 ~ 2020.08"
   description: |
     <ul>
-      <li><strong>MVP부터 실제 서비스 운영까지 2년 반 이상 안정적으로 관리</strong>, 파트너사 이탈률 20% 이하 유지</li>
-      <li><strong>서비스 운영 총괄</strong>: 광고·제휴, CS 응대 등 <strong>운영 전반 표준화</strong></li>
-      <li><strong>고객 피드백</strong> 기반 신기능 지속 반영, CS 만족도 향상을 바탕으로 월 최고 매출 1800만원 달성</li>
+      <li><strong>서비스 운영 총괄</strong>: 광고·제휴, CS 프로세스 표준화</li>
+      <li><strong>파트너사 이탈률</strong> 20% 이하 유지, 월 최고 매출 1800만 원 달성</li>
     </ul>
 
-- company: "Tooravel"
+- company: "Tooravel (Fullstack Developer)"
   position: "Fullstack Developer"
   duration: "2017.08 ~ 2018.01"
   description: |
     <ul>
       <li><strong>문제</strong>
         <ul>
-          <li>여행 플랫폼 스타트업 초기 단계로, <strong>빠른 MVP 개발</strong>과 <strong>안정적 운영</strong>을 동시에 달성해야 함</li>
+          <li>여행 플랫폼 스타트업 초기 상황에서 빠른 MVP 개발 + 안정적 운영 필요</li>
         </ul>
       </li>
       <li><strong>해결</strong>
         <ul>
-          <li><strong>서버 리팩토링</strong>: Django QuerySet, Model Manager 최적화로 처리 성능 30% 이상 향상</li>
-          <li><strong>파트너 관리 페이지 구축</strong>: Custom Django Admin, Bootstrap, jQuery로 파트너 콘텐츠 관리 시스템 제공</li>
+          <li><strong>서버 리팩토링</strong>: Django QuerySet & Model Manager 최적화, 처리 성능 30% 이상 향상</li>
+          <li><strong>파트너 관리 페이지 구축</strong>: Custom Django Admin + Bootstrap + jQuery</li>
         </ul>
       </li>
       <li><strong>성과</strong>
         <ul>
-          이후 운영에 필요한 서비스 런칭 성공.
+          <li>초기 MVP 성공 런칭, 이후 운영 기반 마련</li>
         </ul>
       </li>
     </ul>
