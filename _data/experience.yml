@@ -5,21 +5,17 @@
     <ul>
       <li><strong>도메인 특성</strong>
         <ul>
-          <li>이탈리아 명품 부띠끄 40여 곳에서 제공되는 재고 데이터(일일 10만 건 이상)를 안정적으로 처리</li>
-        </ul>
-      </li>
-      <li><strong>문제</strong>
-        <ul>
+          <li>이탈리아 명품 부띠끄 40여 곳에서 제공되는 재고 시트 수천개의 데이터 추출(일일 10만 건 이상)을 30분내 안정적으로 처리</li>
+          <li>수기로 처리되던 명품 거래 특성상, 일률적이지 않은 엑셀 시트 양식</li>
           <li>사내 개발 인프라 부재로 VPC 구성부터 서비스 개발까지 전 과정을 구축해야 함</li>
-          <li>명품 거래 특성상, 재고 정보 오류 시 직·간접적 비용 발생</li>
         </ul>
       </li>
       <li><strong>해결</strong>
         <ul>
-          <li><strong>인프라 최적화</strong>: VPC 구성, ARM64 아키텍처 도입(서버 비용 월 15% 절감), GitHub Actions + CodePipeline으로 자동 배포</li>
+          <li><strong>인프라 최적화</strong>: VPC 구성, ARM64 아키텍처 도입(서버 비용 월 15% 절감), CI/CD 구성</li>
+          <li><strong>비동기 아키텍처</strong>: AWS SQS로 메시지 기반 서비스간 연결, 트래픽 부하 분산 및 확장성 확보</li>
           <li><strong>데이터 파이프라인</strong>: Kotlin + Apache POI로 엑셀·CSV 라인시트를 자동 파싱·검증</li>
-          <li><strong>비동기 아키텍처</strong>: AWS SQS로 메시지 기반 처리, 트래픽 부하 분산 및 확장성 확보</li>
-          <li><strong>풀 타입 힌트</strong>: 코드 품질과 가독성 향상, CI/CD에서 조기 에러 감지</li>
+          <li><strong>풀 타입 힌트</strong>: FastAPI로 구현된 데이터 적재 서비스 및 api의 코드 품질과 가독성을 향상시키고자 타입 힌트를 작성</li>
           <li><strong>AI 검증</strong>: OpenAI GPT-4 파인튜닝으로 SKU·가격 정보 검증 자동화 → 운영팀 업무 효율 상승</li>
         </ul>
       </li>
@@ -38,7 +34,7 @@
     <ul>
       <li><strong>문제</strong>
         <ul>
-          <li>모놀리식 Django 서비스에서 투자 도메인 로직이 여러 모듈에 혼재, 성능 저하와 장애 대응 어려움</li>
+          <li>모놀리식 Django + DRF 서비스에서 투자 도메인 로직이 여러 모듈에 혼재, 성능 저하와 장애 대응 어려움</li>
           <li>대출, 상환 등 타 도메인과 코드·DB가 중첩되어 책임 경계가 모호</li>
         </ul>
       </li>
@@ -46,8 +42,8 @@
         <ul>
           <li><strong>도메인 분리 설득·협업</strong>: 투자팀 엔지니어링 매니저로서, 타 팀에게 분리 필요성과 기대 효과를 적극 납득</li>
           <li><strong>투자 로직 식별·재정립</strong>: 모놀리식 내 투자 로직을 발굴해 투자팀 중심 업무 일원화</li>
-          <li><strong>FastAPI + SQLAlchemy</strong> 기반으로 투자 도메인 마이크로서비스 분리, 레거시 Django 연동 최소화</li>
-          <li><strong>리팩토링</strong>: 중복 모듈 추상화·최적화로 유지보수 비용 절감</li>
+          <li><strong>FastAPI + SQLAlchemy</strong> 기반으로 투자 도메인 마이크로서비스 분리</li>
+          <li><strong>리팩토링</strong>: 레거시 내의 중복 모듈 추상화·최적화로 유지보수 비용 절감</li>
         </ul>
       </li>
       <li><strong>성과</strong>
@@ -105,7 +101,7 @@
       <li><strong>해결</strong>
         <ul>
           <li><strong>서버 리팩토링</strong>: Django QuerySet & Model Manager 최적화, 처리 성능 30% 이상 향상</li>
-          <li><strong>파트너 관리 페이지 구축</strong>: Custom Django Admin + Bootstrap + jQuery</li>
+          <li><strong>파트너 관리 페이지 구축</strong>: DRF + Custom Django Admin + Bootstrap + jquery</li>
         </ul>
       </li>
       <li><strong>성과</strong>
